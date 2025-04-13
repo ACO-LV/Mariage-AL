@@ -46,7 +46,7 @@
 .event-image {
   position: relative;
   width: 500px;
-  height: 325px;      /* Hauteur fixe */
+  height: 333px;      /* Hauteur fixe */
   overflow: hidden;   /* Masque toute partie de l'image qui dépasse */
 }
 
