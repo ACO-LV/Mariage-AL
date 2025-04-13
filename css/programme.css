@@ -148,8 +148,8 @@ img {
 }
 
 .btn-return:hover {
-  color: var(--color-bordeaux);
-  border: 2px solid var(--color-bordeaux); /* Contour beige */
+  color: #778f82;
+  border: 2px solid #778f82; /* Contour beige */
   text-decoration: none;
   outline: none;
 }
