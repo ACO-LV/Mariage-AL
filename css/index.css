@@ -1,0 +1,34 @@
+.index-page {
+  background: url('../images/accueil.jpg') no-repeat center 0px;
+  background-size: cover;
+  background-attachment: scroll; /* L'image défile avec le contenu */
+  position: relative; /* Nécessaire pour positionner le pseudo-élément */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Filtre transparent, ajustez l'opacité si besoin */
+  pointer-events: none; /* Pour que l'overlay ne bloque pas l'interaction avec le contenu */
+  z-index: -1; /* Positionné derrière le contenu */
+}
+
+/* --- Section Hero --- */
+.index-hero {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;  /* L'image de fond occupe toute la hauteur de l'écran */
+  background: transparent;
+}
+
+.index-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
