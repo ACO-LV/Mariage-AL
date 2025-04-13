@@ -5,7 +5,7 @@
     display: block;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 0; 
     width: 100%;
     background: #000; /* Fond noir pour toute la zone */
     z-index: 101;
