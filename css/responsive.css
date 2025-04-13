@@ -1,0 +1,159 @@
+/* 📌 MENU RESPONSIVE SUR MOBILE (max 768px) */
+@media screen and (max-width: 768px) {
+
+.responsive-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000; /* Fond noir pour toute la zone */
+    z-index: 101;
+    padding: 0px 0;
+  }
+    
+  /* Bouton hamburger */
+  .responsive-header .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    font-size: 28px;
+    color: var(--color-beige);
+    background-color: var(--text-color); /* ou gardez un fond si vous préférez */
+    padding: 0px;
+    cursor: pointer;
+    width: 50px;   /* Largeur fixe */
+    height: 50px;  /* Hauteur fixe pour obtenir un carré */
+    z-index: 102;
+  }
+  
+  /* Menu de navigation responsive */
+  .responsive-header .nav-links-index-responsive {
+    display: none; /* Masqué par défaut */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    margin: 0;
+    padding: 60px 0 10px; /* 60px pour laisser de la place au bouton */
+    z-index: 101;
+  }
+  
+  /* Affichage du menu lors de l'activation */
+  .responsive-header .nav-links-index-responsive.active {
+    display: flex;
+  }
+  
+  .responsive-header .nav-links-index-responsive ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .responsive-header .nav-links-index-responsive ul li a {
+    font-size: 18px;
+    padding: 15px;
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+
+.responsive-header .nav-links-index-responsive a:hover {
+  color: var(--color-bordeaux);
+  text-decoration: none;
+  outline: none;
+}
+   
+  /* Masquer le menu standard sur mobile */
+  .nav-links-index {
+    display: none;
+  }
+
+/* Réduire la taille du titre, autoriser le retour à la ligne et le centrer */
+  .mariage-name-index {
+    font-size: 2.5rem; /* Taille réduite par rapport aux 4.2rem du desktop */
+    white-space: normal; /* Permet le saut de ligne si le titre est trop long */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;  
+  } 
+
+/* Footer */
+/* Assurer que le footer fait bien toute la largeur */
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.footer-separator {
+    display: none;
+}
+    
+} /* Fin du @media (max-width: 768px) */
+
+/* 📌 MENU RESPONSIVE SUR MOBILE (max 480px) */
+@media screen and (max-width: 480px) {
+
+    /* Ajustements généraux */
+    body {
+        font-size: 14px;
+    }
+
+    /* Header */
+    .logo {
+        width: 40px;
+    }
+
+    .company-name {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-text {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .hero-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    /* Social links */
+    .social-links {
+        gap: 8px;
+    }
+
+    .social-links a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-links img {
+        width: 20px;
+    }
+    
+    footer {
+        font-size: 12px;
+    }
+} /* Fin du @media (max-width: 480px) */
