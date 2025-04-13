@@ -1,130 +1,69 @@
-/* -----------------------------
-   RESET & STYLES GLOBALES
------------------------------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Programme du Mariage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Lien vers la feuille de style -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-body {
-  background-color: #fdf8f6; /* Un fond très clair rosé */
-  color: #333;
-}
+  <header class="page-header">
+    <h1>Programme du Mariage</h1>
+  </header>
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
+  <!-- SECTION CEREMONIE -->
+  <section class="event-section">
+    <div class="event-image">
+      <img src="images/eglise.jpg" alt="Eglise">
+    </div>
+    <div class="event-details">
+      <h2>Cérémonie religieuse</h2>
+      <p class="event-time">16h</p>
+      <p class="event-location">Ermitage de la trinité, Bonifacio</p>
+      <ul class="event-links">
+        <li><a href="https://maps.app.goo.gl/XPK3CsF64tNJS8TN7" class="link-map">Voir sur Google Maps</a></li>
+      </ul>
+      <button class="btn-rsvp">RSVP</button>
+    </div>
+  </section>
 
-/* -----------------------------
-   HEADER & FOOTER
------------------------------- */
-.page-header,
-.page-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-}
+  <!-- SECTION RECEPTION -->
+  <section class="event-section">
+    <div class="event-image">
+      <img src="images/reception.jpg" alt="Cocktail & Soirée">
+    </div>
+    <div class="event-details">
+      <h2>Cocktail & Soirée</h2>
+      <p class="event-time">17h — 5h</p>
+      <p class="event-location">Golf de Spérone, Bonifacio</p>
+      <ul class="event-links">
+        <li><a href="https://maps.app.goo.gl/8ZrL6zoZs2rJokCc9" class="link-map">Voir sur Google Maps</a></li>
+      </ul>
+      <button class="btn-rsvp">RSVP</button>
+    </div>
+  </section>
 
-.page-header h1 {
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 0.5rem;
-}
+ <!-- SECTION RECEPTION -->
+  <section class="event-section">
+    <div class="event-image">
+      <img src="images/brunch.jpg" alt="Brunch & Beach party">
+    </div>
+    <div class="event-details">
+      <h2>Brunch & Beach party</h2>
+      <p class="event-time">12h — 18h</p>
+      <p class="event-location">Club Trois Deux, Baie de Santa Giulia, Bonifacio</p>
+      <ul class="event-links">
+        <li><a href="https://maps.app.goo.gl/nsxqSdLiYr1uX5X66" class="link-map">Voir sur Google Maps</a></li>
+      </ul>
+      <button class="btn-rsvp">RSVP</button>
+    </div>
+  </section>
 
-.page-footer p {
-  font-size: 0.9rem;
-  color: #777;
-}
+  <footer class="page-footer">
+    <p>&copy; Mariage Léonore & Arthur - 2026</p>
+  </footer>
 
-/* -----------------------------
-   SECTION D’ÉVÉNEMENT
------------------------------- */
-
-/* Mise en page en 2 colonnes sur grand écran,
-   qui passe en colonne unique sur mobiles. */
-.event-section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 1rem;
-  gap: 2rem; /* espace entre l’image et le bloc texte */
-}
-
-/* Pour garantir que l’image et le texte occupent chacun 50% 
-   sur un écran suffisamment large */
-.event-image,
-.event-details {
-  flex: 1 1 45%;
-  min-width: 280px; /* évite que ça devienne trop étroit */
-}
-
-.event-image img {
-  border-radius: 4px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-/* -----------------------------
-   BLOCS DE TEXTE
------------------------------- */
-.event-details h2 {
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.event-time {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.event-location {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
-}
-
-/* Liens Map / Calendar */
-.event-links {
-  list-style: none;
-  margin-bottom: 1.5rem;
-}
-
-.event-links li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-.event-links a {
-  text-decoration: none;
-  color: #4F7025; /* Un vert un peu doux */
-  font-weight: 500;
-}
-
-.event-links a:hover {
-  text-decoration: underline;
-}
-
-/* -----------------------------
-   BOUTON RSVP
------------------------------- */
-.btn-rsvp {
-  display: inline-block;
-  background: #fff;
-  color: #4F7025;
-  border: 2px solid #4F7025;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s;
-}
-
-.btn-rsvp:hover {
-  background: #4F7025;
-  color: #fff;
-}
+</body>
+</html>
