@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notre Mariage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- En-tête -->
+  <header>
+    <h1>Bienvenue à notre Mariage</h1>
+    <p>Nous sommes ravis de vous inviter à célébrer ce jour avec nous.</p>
+  </header>
+
+  <!-- Section Programme -->
+  <section id="programme">
+    <h2>Programme</h2>
+    <ul>
+      <li><strong>Cérémonie :</strong> 15h30 - Église de Sainte-Marie (Adresse complète)</li>
+      <li><strong>Vin d'honneur :</strong> 17h00 - Jardins du Château (Adresse complète)</li>
+      <li><strong>Dîner & Soirée :</strong> 19h30 - Salle de réception du Château (Adresse complète)</li>
+    </ul>
+  </section>
+
+  <!-- Section Infos pratiques -->
+  <section id="infos">
+    <h2>Informations Pratiques</h2>
+    <p>Retrouvez toutes les informations utiles (liste de mariage, logements, etc.) dans notre PDF disponible via le lien ci-dessous :</p>
+    
+    <!-- Lien vers le PDF hébergé sur Google Drive -->
+    <a href="https://drive.google.com/**********" target="_blank" class="btn">
+      Consulter le PDF complet
+    </a>
+
+    <!-- Exemple d'intégration d'un QR code (optionnel) -->
+    <div class="qrcode-container">
+      <img src="qrcode.png" alt="QR Code Mariage" />
+      <p>Scannez ce QR code pour accéder au PDF mis à jour</p>
+    </div>
+  </section>
+
+  <!-- Section RSVP (Confirmation de présence) -->
+  <section id="rsvp">
+    <h2>Confirmez votre présence</h2>
+    <p>Merci de remplir ce formulaire afin de nous aider à organiser au mieux la journée.</p>
+
+    <!-- Formulaire HTML (voir remarques plus bas pour la gestion de ces données) -->
+    <form id="rsvpForm">
+      <label for="name">Nom & Prénom :</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Adresse e-mail :</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="guests">Nombre de personnes :</label>
+      <input type="number" id="guests" name="guests" min="1" value="1" required />
+
+      <label for="message">Un petit mot ? (optionnel)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- Zone d'affichage d'un message de confirmation ou d'erreur -->
+    <div id="formMessage"></div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2025 - Notre Mariage</p>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
