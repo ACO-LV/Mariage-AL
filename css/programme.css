@@ -1,21 +1,4 @@
-/* -----------------------------
-   RESET & STYLES GLOBALES
------------------------------- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-body {
-  background-color: #fdf8f6; /* Un fond très clair rosé */
-  color: #333;
-}
-
 img {
-  max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -47,25 +30,35 @@ img {
    qui passe en colonne unique sur mobiles. */
 .event-section {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1rem;
-  gap: 2rem; /* espace entre l’image et le bloc texte */
+  gap: 2rem; /* Espace entre l’image et le bloc texte */
+  
+  /* Par défaut, image à gauche et texte à droite */
+  flex-direction: row;
 }
 
-/* Pour garantir que l’image et le texte occupent chacun 50% 
-   sur un écran suffisamment large */
-.event-image,
-.event-details {
-  flex: 1 1 45%;
-  min-width: 280px; /* évite que ça devienne trop étroit */
+/* Permet d'inverser la disposition pour les sections paires
+   (2e, 4e, etc.). 
+   Ainsi, la photo passe à droite et le texte à gauche. */
+.event-section:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
+/* Pour fixer la taille de la photo */
 .event-image img {
+  width: 400px;       /* Largeur fixe */
+  height: 300px;      /* Hauteur fixe */
+  object-fit: cover;  /* Recadre l'image si besoin */
   border-radius: 4px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.event-details {
+  flex: 1; /* Le texte prend l’espace restant */
+  min-width: 200px;
 }
 
 /* -----------------------------
@@ -106,6 +99,7 @@ img {
 
 .event-links a:hover {
   text-decoration: underline;
+  color: #778f82;
 }
 
 /* -----------------------------
