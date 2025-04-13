@@ -1,0 +1,132 @@
+/* -----------------------------
+   HEADER & FOOTER
+------------------------------ */
+.infos-header,
+.infos-footer {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.infos-header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.infos-footer p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* -----------------------------
+   SECTION D’ÉVÉNEMENT
+------------------------------ */
+
+/* Mise en page en 2 colonnes sur grand écran,
+   qui passe en colonne unique sur mobiles. */
+.infos-section {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 2rem; /* Espace entre l’image et le bloc texte */
+  
+  /* Par défaut, image à gauche et texte à droite */
+  flex-direction: row;
+}
+
+/* Permet d'inverser la disposition pour les sections paires
+   (2e, 4e, etc.). 
+   Ainsi, la photo passe à droite et le texte à gauche. */
+.infos-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.infos-image {
+  position: relative;
+  width: 500px;
+  height: 333px;      /* Hauteur fixe */
+  overflow: hidden;   /* Masque toute partie de l'image qui dépasse */
+}
+
+.infos-image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* recadre l'image si besoin */
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.infos-details {
+  flex: 1; /* Le texte prend l’espace restant */
+  min-width: 200px;
+}
+
+/* -----------------------------
+   BLOCS DE TEXTE
+------------------------------ */
+.infos-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.infos-time {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.infos-location {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Liens Map / Calendar */
+.infos-links {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.infos-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.infos-links a {
+  text-decoration: none;
+  color: #4F7025; /* Un vert un peu doux */
+  font-weight: 500;
+}
+
+.infos-links a:hover {
+  text-decoration: underline;
+  color: #778f82;
+}
+
+/* Bouton de retour */
+.infos-programme-return {
+  text-align: center;
+  margin: 20px 0;
+  z-index: 2;
+}
+
+.btn-return {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond transparent */
+  color: #000;       /* Texte en beige */
+  border: 2px solid #000; /* Contour beige */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-return:hover {
+  color: #778f82;
+  border: 2px solid #778f82; /* Contour beige */
+  text-decoration: none;
+  outline: none;
+}
