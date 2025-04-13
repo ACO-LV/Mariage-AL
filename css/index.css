@@ -1,20 +1,21 @@
+/* Fond de page avec image et overlay transparent */
 .index-page {
-  background: url('../images/accueil.jpg') no-repeat center 0px;
+  position: relative;
+  min-height: 100vh;
+  background: url('../images/accueil.jpg') no-repeat center center;
   background-size: cover;
-  background-attachment: scroll; /* L'image défile avec le contenu */
-  position: relative; /* Nécessaire pour positionner le pseudo-élément */
 }
 
-body::before {
+.index-page::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Filtre transparent, ajustez l'opacité si besoin */
-  pointer-events: none; /* Pour que l'overlay ne bloque pas l'interaction avec le contenu */
-  z-index: -1; /* Positionné derrière le contenu */
+  background: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité du filtre ici */
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* --- Section Hero --- */
@@ -24,6 +25,33 @@ body::before {
   left: 0;
   width: 100%;
   height: 20vh;  /* L'image de fond occupe toute la hauteur de l'écran */
+  background: transparent;
+}
+
+/* Logo centré en haut de l'image de fond */
+.index-logo-container {
+  position: absolute;
+  top: 20px; /* Distance du haut, ajustable */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.index-logo {
+  max-width: 80px;
+  height: auto;
+  display: block;
+}
+
+/* Contenu principal */
+/* --- Contenu Principal --- */
+.index-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+  z-index: 2;
+  color : var(--text-color);
   background: transparent;
 }
 
