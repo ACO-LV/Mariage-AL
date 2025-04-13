@@ -32,3 +32,34 @@ body::before {
     height: 100%;
     object-fit: cover;
 }
+
+/* En-tête */
+header {
+  background-color: #eaeaea;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section titre */
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+/* Titres de sections */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
