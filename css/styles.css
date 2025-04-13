@@ -1,0 +1,128 @@
+/* Structure de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* En-tête */
+header {
+  background-color: #eaeaea;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section titre */
+section {
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+/* Titres de sections */
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Liste programme */
+#programme ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+#programme li {
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-left: 4px solid #ccc;
+}
+
+/* Bouton Lien PDF */
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* Container QR Code */
+.qrcode-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.qrcode-container img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Formulaire RSVP */
+#rsvpForm {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+#rsvpForm label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+#rsvpForm input,
+#rsvpForm textarea {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#rsvpForm button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+#rsvpForm button:hover {
+  background-color: #555;
+}
+
+/* Message de formulaire */
+#formMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+  color
