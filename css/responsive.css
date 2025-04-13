@@ -21,8 +21,8 @@
     top: 0;
     right: 20px;
     font-size: 28px;
-    color: var(--color-beige);
-    background-color: var(--text-color); /* ou gardez un fond si vous préférez */
+    color: #fff;
+    background-color: #000; /* ou gardez un fond si vous préférez */
     padding: 0px;
     cursor: pointer;
     width: 50px;   /* Largeur fixe */
@@ -64,7 +64,7 @@
   }
 
 .responsive-header .nav-links-index-responsive a:hover {
-  color: var(--color-bordeaux);
+  color: #778f82;
   text-decoration: none;
   outline: none;
 }
