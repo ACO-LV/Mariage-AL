@@ -33,33 +33,85 @@ body::before {
     object-fit: cover;
 }
 
-/* En-tête */
-header {
-  background-color: #eaeaea;
-  padding: 2rem;
+/* Le texte se place au-dessus de l'overlay */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 4.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Contenu centré dans la section hero */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 2;
+  color: var(--color-beige);
 }
 
-header h1 {
-  margin-bottom: 0.5rem;
-  font-size: 2.5rem;
+/* Nom de la compagnie */
+.mariage-name-index {
+  font-size: 4.2rem;
+  margin-bottom: 40px;
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #555;
+/* Navigation centrée */
+.nav-links-index ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-flex;
+  gap: 40px; /* Espacement entre les onglets */
 }
 
-/* Section titre */
-section {
-  margin: 2rem auto;
-  max-width: 800px;
-  padding: 1rem;
+.nav-links-index a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  transition: color 0.3s;
 }
 
-/* Titres de sections */
-section h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #444;
+.nav-links-index a:hover {
+  color: var(--color-bordeaux);
+  text-decoration: none;
+  outline: none;
+}
+
+/* Bouton principal */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: var(--color-bordeaux); /* Rouge bordeaux */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--color-dark-bordeaux); /* Rouge plus foncé */
+    text-decoration: none;
+    outline: none;
+}
+
+.btn-secondary:hover {
+    background: #444;
+    text-decoration: none;
+    outline: none;
 }
