@@ -60,7 +60,7 @@ body::before {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
-  color: var(--color-beige);
+  color: #cef5e1;
 }
 
 /* Nom de la compagnie */
@@ -86,7 +86,7 @@ body::before {
 }
 
 .nav-links-index a:hover {
-  color: var(--color-bordeaux);
+  color: #778f82;
   text-decoration: none;
   outline: none;
 }
@@ -98,14 +98,14 @@ body::before {
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background: var(--color-bordeaux); /* Rouge bordeaux */
+    background: #cef5e1; /* Rouge bordeaux */
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease-in-out;
 }
 
 .btn:hover {
-    background: var(--color-dark-bordeaux); /* Rouge plus foncé */
+    background: #778f82; /* Rouge plus foncé */
     text-decoration: none;
     outline: none;
 }
