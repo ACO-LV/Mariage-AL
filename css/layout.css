@@ -1,0 +1,14 @@
+/* FOOTER  ---------------------------------------------------- */
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #000;
+  z-index: 2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap; /* Assure qu'il n'y ait pas de saut de ligne */
+}
