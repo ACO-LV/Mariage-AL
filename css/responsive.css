@@ -102,8 +102,13 @@ footer p {
 }
 
 .event-section {
-    flex-direction: column;
-}
+    flex-direction: column !important; /* Sur mobile, image en haut, texte en dessous */
+  }
+
+  .event-image img {
+    width: 100%;
+    height: auto; /* On peut libérer la hauteur fixe sur mobile pour plus de souplesse */
+  }
     
 } /* Fin du @media (max-width: 768px) */
 
