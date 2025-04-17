@@ -118,6 +118,17 @@ footer p {
     padding: 0.6rem;     /* ↓ si vous voulez compacter encore */
   }
 
+  /* ---- Programme : bloc texte centré ---- */
+  .event-details{
+    display: flex;          /* on empile tous les éléments l’un sous l’autre */
+    flex-direction: column; /* ordre vertical naturel */
+    align-items: center;    /* centre horizontalement chaque élément (h2, p, ul…) */
+    text-align: center;     /* centre le contenu des balises elles‑mêmes */
+  }
+
+  .event-links{ text-align:center; }
+
+
   .event-image img {
     width: 100%;
     height: auto; /* On peut libérer la hauteur fixe sur mobile pour plus de souplesse */
