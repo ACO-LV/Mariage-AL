@@ -133,6 +133,29 @@ footer p {
     width: 100%;
     height: auto; /* On peut libérer la hauteur fixe sur mobile pour plus de souplesse */
   }
+
+  .event-section {
+    flex-direction: column-reverse !important;  /* ← change ‘column’ en ‘column‑reverse’ */
+    gap: 0.8rem;      /* ↓ au lieu de 2rem : espace photo/texte plus serré */
+    margin: 1.2rem auto; /* ↓ marge externe entre deux sections */
+    padding: 0.6rem;     /* ↓ si vous voulez compacter encore */
+  }
+
+  /* ---- Infos Pratiques : bloc texte centré ---- */
+  .infos-details{
+    display: flex;          /* on empile tous les éléments l’un sous l’autre */
+    flex-direction: column; /* ordre vertical naturel */
+    align-items: center;    /* centre horizontalement chaque élément (h2, p, ul…) */
+    text-align: center;     /* centre le contenu des balises elles‑mêmes */
+  }
+
+  .infos-links{ text-align:center; }
+
+
+  .infos-image img {
+    width: 100%;
+    height: auto; /* On peut libérer la hauteur fixe sur mobile pour plus de souplesse */
+  }
     
 } /* Fin du @media (max-width: 768px) */
 
