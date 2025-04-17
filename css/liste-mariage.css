@@ -11,3 +11,28 @@
   text-align: center;
   color: #555;
 }
+
+/* Bouton de retour */
+.liste-programme-return {
+  text-align: center;
+  margin: 20px 0;
+  z-index: 2;
+}
+
+.btn-return {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent; /* Fond transparent */
+  color: #000;       /* Texte en beige */
+  border: 2px solid #000; /* Contour beige */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-return:hover {
+  color: #778f82;
+  border: 2px solid #778f82; /* Contour beige */
+  text-decoration: none;
+  outline: none;
+}
