@@ -1,0 +1,13 @@
+/* ---- Page liste de mariage ---- */
+.liste-page .page-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+
+.coming-soon {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #555;
+}
