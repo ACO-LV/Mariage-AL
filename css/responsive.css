@@ -53,6 +53,11 @@
   .responsive-header .nav-links-index-responsive.active {
     display: flex;
   }
+
+  /* Liens dans le menu hamburger : pas de soulignement */
+  .responsive-header .nav-links-index-responsive a {
+    text-decoration: none;
+  }
   
   .responsive-header .nav-links-index-responsive ul {
     flex-direction: column;
