@@ -134,7 +134,7 @@ footer p {
     height: auto; /* On peut libérer la hauteur fixe sur mobile pour plus de souplesse */
   }
 
-  .event-section {
+  .infos-section {
     flex-direction: column-reverse !important;  /* ← change ‘column’ en ‘column‑reverse’ */
     gap: 0.8rem;      /* ↓ au lieu de 2rem : espace photo/texte plus serré */
     margin: 1.2rem auto; /* ↓ marge externe entre deux sections */
