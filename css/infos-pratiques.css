@@ -18,6 +18,16 @@
   color: #777;
 }
 
+.section-divider {
+  border: none;
+  height: 3px;
+  width: 80%;        /* ≤—— 80 % de la largeur de la fenêtre  */
+  max-width: 900px;  /* (facultatif) limite haute si vous gardez vos 900 px */
+  margin: 4rem auto; /* auto sur les côtés = centrage horizontal */
+  background: #4F7025;
+}
+
+
 /* -----------------------------
    SECTION D’ÉVÉNEMENT
 ------------------------------ */
