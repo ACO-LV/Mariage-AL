@@ -113,7 +113,7 @@ footer p {
 
 .event-section {
     flex-direction: column !important; /* Sur mobile, image en haut, texte en dessous */
-    gap: 0.8rem;      /* ↓ au lieu de 2rem : espace photo/texte plus serré */
+    gap: 0.3rem;      /* ↓ au lieu de 2rem : espace photo/texte plus serré */
     margin: 1.2rem auto; /* ↓ marge externe entre deux sections */
     padding: 0.6rem;     /* ↓ si vous voulez compacter encore */
   }
