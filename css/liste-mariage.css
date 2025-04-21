@@ -12,6 +12,95 @@
   color: #555;
 }
 
+/* -----------------------------
+   SECTION D’ÉVÉNEMENT
+------------------------------ */
+
+/* Mise en page en 2 colonnes sur grand écran,
+   qui passe en colonne unique sur mobiles. */
+.liste-section {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 2rem; /* Espace entre l’image et le bloc texte */
+  
+  /* Par défaut, image à gauche et texte à droite */
+  flex-direction: row;
+}
+
+/* Permet d'inverser la disposition pour les sections paires
+   (2e, 4e, etc.). 
+   Ainsi, la photo passe à droite et le texte à gauche. */
+.liste-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.liste-image {
+  position: relative;
+  width: 500px;
+  height: 333px;      /* Hauteur fixe */
+  overflow: hidden;   /* Masque toute partie de l'image qui dépasse */
+}
+
+.liste-image img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* recadre l'image si besoin */
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.liste-details {
+  flex: 1; /* Le texte prend l’espace restant */
+  min-width: 200px;
+}
+
+/* -----------------------------
+   BLOCS DE TEXTE
+------------------------------ */
+.liste-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.liste-time {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.liste-location {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Liens Map / Calendar */
+.liste-links {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.liste-links li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.liste-links a {
+  text-decoration: none;
+  color: #4F7025; /* Un vert un peu doux */
+  font-weight: 500;
+}
+
+.liste-links a:hover {
+  text-decoration: underline;
+  color: #778f82;
+}
+
+
 /* Bouton de retour */
 .liste-programme-return {
   text-align: center;
